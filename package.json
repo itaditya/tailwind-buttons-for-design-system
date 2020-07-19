@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start"
   },
   "dependencies": {
@@ -14,8 +15,15 @@
     "react-dom": "16.13.0"
   },
   "devDependencies": {
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.5.1"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.20"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "yarn"
+  }
 }

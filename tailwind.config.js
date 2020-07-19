@@ -19,4 +19,5 @@ module.exports = {
     boxShadow: ['hover', 'disabled', 'focus'],
   },
   plugins: [],
+  purge: ['./src/**/*.js'],
 };
