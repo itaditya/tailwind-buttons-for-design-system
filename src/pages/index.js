@@ -1,11 +1,10 @@
 import Head from "next/head";
 
-import {
-  ButtonBase,
-  ButtonSolid,
-  ButtonGhost,
-  IconButton
-} from "../components/Button";
+import ButtonBase from "../components/ButtonBase";
+import ButtonSolid from "../components/ButtonSolid";
+import ButtonGhost from "../components/ButtonGhost";
+import ButtonCustom from "../components/ButtonCustom";
+import IconButton from "../components/IconButton";
 
 function IconHeart() {
   return (
@@ -21,15 +20,6 @@ function IconHeart() {
     >
       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
     </svg>
-  );
-}
-
-function ButtonCustom(props) {
-  return (
-    <ButtonBase
-      {...props}
-      className="text-white bg-blue-500 disabled:bg-blue-500 hover:bg-blue-600 active:bg-blue-600 focus:bg-blue-600 shadow-md disabled:shadow-md hover:shadow-lg"
-    />
   );
 }
 
